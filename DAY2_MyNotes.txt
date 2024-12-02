@@ -1,0 +1,62 @@
+***operators:
+1)arithmetic op:
+  -binary op : +,-,*,/
+  -unary op: ++,-- 
+   may be :x++ ->postfix(increment after assignment)
+           ++x ->postfix(increment before assignment)
+
+2)relational op: >,>=,<,<=,==,!=
+3)logical op: &&(AND) , ||(OR), !(NOT)
+4)assignment op
+5)ternary op:   ___?____:____
+      conditin? if-true : if-false
+6)sizeof op: 
+    sizeof(int)  //---->4B
+7)bitwise op: &,|,..        ^_^( search) 
+         
+***in execution operators follow Priority of arithmetic operations
+***control statments:
+  1)decisions making: if,switch,...
+     ***if (non-zero_condition){ //if true, x=9 ,(if x>5)
+           statments achieved if its true;}
+       notice--------------------------------
+       if (non-zero_condition) 
+         = if (scanf("%d",&x)) -->//printf("%d", scanf("%d",&x)) always give 1
+         = if('R')=if('') -->replace with ascii 
+
+    ***if ...         -------------------->        if .....
+       else if....    more better than             if......
+       else if ....   using multiple if            if .......
+       else ....      true of one it doesn't       else .......
+                      complete other conditions
+    ***nested if in implementation ---> equal Ands (condition1&&condition2)
+    ***switch(expression) ///equal to nested if..else...
+       {///--->expression must be int num or ما يؤؤل اليه :)
+        ///--->for one time check equality and jump(labeling) to one case
+       case val1: ///vals in cases must be fixed integers
+          -----
+          break; ///--->if not found it direct execute next case without check equality
+       case val2:
+          ----- ///--->execute and direct execute next case (fall through,fall into)
+       case val3:
+          -----
+          break;
+       default: ///optional to written, written anywhere first or end of switch as
+                   switch always make labeling (jump to one case)
+          ---- ///--->not need break,we meet end of switch brackets(same effect of break)}
+
+       -Switch expression vaild to be :
+        switch(op) ///--->op int num
+        switch(scanf("%d",&x)) ///--->return no-of-values scanned -->مايؤؤل اليه :)
+        switch(x+y)  ///---> x+y give 3 integer num
+        switch(x>y)  ///--->gives true=1 or false=0
+        switch("t") ///--->gives ascii of the letter
+       -Switch expression invaild to be :
+        switch(3.5) ///---> must be int not float
+        switch("toka") ///---> must be int not string
+
+  2)loops: for,while,...
+     while(); ///--->called empty statment (infinite loop)
+
+
+
